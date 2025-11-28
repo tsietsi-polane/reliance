@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mr Tsietsi Polane Graduation RSVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>RSVP for Mr Tsietsi Polane’s Graduation Celebration 🎓</h1>
+
+    <section class="form-card">
+      <form id="rsvp-form">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="e.g., Thabo Mokoena" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="e.g., thabo@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="contact">Contact number</label>
+          <input id="contact" name="contact" type="text" placeholder="e.g., +266 58 123 456" required />
+        </div>
+
+        <button id="submit-btn" type="submit">Submit RSVP</button>
+        <p id="status" class="status"></p>
+      </form>
+    </section>
+
+    <section class="preview">
+      <h2>Your personalized invitation</h2>
+      <div class="canvas-wrap">
+        <canvas id="cardCanvas" width="900" height="600"></canvas>
+      Download your invitation</div>
+      <a id="downloadLink" class="download-btn" style="display:none;" download="invitation.png"></a>
+    </section>
+  </main>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- App logic -->
+  <script src="script.js"></script>
+</body>
+</html>
