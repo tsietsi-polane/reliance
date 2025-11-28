@@ -1,6 +1,6 @@
 // Initialize EmailJS
 (function () {
-  emailjs.init("YOURXjrigZwR6DROGu62D"); // Replace with your actual Public Key
+  emailjs.init("XjrigZwR6DROGu62D"); // Replace with your actual Public Key
 })();
 
 const canvas = document.getElementById("cardCanvas");
